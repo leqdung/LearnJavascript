@@ -127,11 +127,25 @@
 // console.log(a[2].classList.remove("btn-outline-info"));
 
 //DOCUMENT READY
+// document.addEventListener(
+//   "DOMContentLoad",
+//   function () {
+//     //
+//   },
+//   false
+// );
+//sự kiện click tên sư kiên.onclick() {...}
 document.addEventListener(
-  "DOMContentLoad",
+  // thêm 1 đối tượng lắng nghe sự kiện
+  "DOMContentLoaded",
   function () {
-    //
+    //viết sự kiện
+    var x1 = document.getElementById("b1");
+    console.log(x1);
+    x1.onclick = function () {
+      console.log("You clicked to button!" + x1);
+      x1.classList.add("downward");
+    };
   },
   false
 );
-//sự kiện click tên sư kiên.onclick() {...}

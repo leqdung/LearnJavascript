@@ -3,3 +3,9 @@
   margin: 0;
   padding: 0;
 }
+
+.downward {
+  transition: 0.3s;
+  margin-top: 200px;
+  opacity: 0;
+}
