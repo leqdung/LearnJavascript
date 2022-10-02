@@ -10,7 +10,7 @@
   /* transform: translateX(180px); */
   animation: sangphai 1s forwards;
 }
-@-webkit-keyframes sangphai {
+/* @-webkit-keyframes sangphai {
   0% {
     transform: translateX(0);
     margin-top: 0px;
@@ -48,7 +48,7 @@
   100% {
     transporm: translateX(500px);
   }
-}
+} */
 #kcd {
   animation: chieu2 2s forwards;
   @-webkit-keyframes chieu2 {
