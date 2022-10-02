@@ -1,31 +1,21 @@
-//truy xuất phàn từ
-// document.addEventListener(
-//   "DOMContentLoaded",
-//   function () {
-//     var n = document.getElementById("b1");
-//     var card1 = document.getElementsByClassName("card");
-//     // console.log(n);
-//     n.onclick = function () {
-//       // console.log("do you click oke?");
-//       // console.log(element);
-//       card1[0].classList.add("rightMove");
-//     };
-//   },
-//   false
-// );
-
-//trước khi truy xuất phải load document
 document.addEventListener(
-  //thêm 1 phần tủ nghe sự kiện
-  "DOMContentLoaded", //yêu cầu load dom trước
+  "DOMContentLoaded",
   function () {
-    // truy xuất 1 phần tử
-    var x = document.getElementById("nut1");
-    var khoi = document.getElementsByClassName("card");
-    // console.log(x);
-    x.onclick = function () {
-      // console.log("click");
-      khoi[0].classList.toggle("diphai");
+    //
+    var nut = document.getElementById("nuthieuung");
+    var trangthai = "lan1";
+    var khoi = document.getElementById("kcd");
+    nut.onclick = function () {
+      // console.log("click on nut");
+      if (trangthai == "lan1") {
+        console.log(trangthai);
+        trangthai = "lan2";
+        khoi.classList.add("chieuso1");
+      } else if (trangthai == "lan2") {
+        console.log(trangthai);
+        trangthai = "lan1";
+        khoi.classList.remove("chieuso1");
+      }
     };
   },
   false
