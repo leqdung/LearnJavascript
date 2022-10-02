@@ -4,8 +4,31 @@
   padding: 0;
 }
 .card {
-  transition: 0.4s;
+  transition: 0.1s;
 }
 .diphai {
-  transform: translateX(180px);
+  /* transform: translateX(180px); */
+  animation: sangphai 1s forwards;
+}
+@-webkit-keyframes sangphai {
+  /* 0% {
+    transform: translateX(0);
+    margin-top: 0px;
+    opacity: 1;
+  } */
+  50% {
+    transform: translateX(400px);
+    margin-top: 0;
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(400px);
+    margin-top: 200px;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(400px);
+    margin-top: 200px;
+    opacity: 0;
+  }
 }
