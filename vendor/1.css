@@ -6,6 +6,6 @@
 .card {
   transition: 0.4s;
 }
-.righMove {
-  transform: translateX(200px);
+.diphai {
+  transform: translateX(180px);
 }
