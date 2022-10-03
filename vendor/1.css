@@ -10,6 +10,11 @@
   /* transform: translateX(180px); */
   animation: sangphai 1s forwards;
 }
+
+.chieuso1 {
+  animation: chieu1 1s forwards !important;
+}
+
 @-webkit-keyframes chieu1 {
   0% {
     transform: translateX(0);
@@ -37,6 +42,36 @@
     opacity: 0;
   }
 }
-.chieuso1 {
-  animation: chieu1 1s forwards;
+#kcd {
+  animation: chieu2 3s forwards;
+}
+@-webkit-keyframes chieu2 {
+  100% {
+    transform: translateX(0);
+    margin-top: 0px;
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(250px);
+    margin-top: 15px;
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(400px);
+    margin-top: 100px;
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(400px);
+    margin-top: 200px;
+    opacity: 0;
+  }
+  0% {
+    transform: translateX(400px);
+    margin-top: 200px;
+    opacity: 0;
+  }
+}
+.ko-dong {
+  animation: none !important;
 }

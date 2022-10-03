@@ -11,6 +11,7 @@ document.addEventListener(
         console.log(trangthai);
         trangthai = "lan2";
         khoi.classList.add("chieuso1");
+        khoi.classList.remove("ko-dong");
       } else if (trangthai == "lan2") {
         console.log(trangthai);
         trangthai = "lan1";
