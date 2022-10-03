@@ -3,8 +3,8 @@ document.addEventListener(
   function () {
     //
     var nut = document.getElementById("nuthieuung");
-    var trangthai = "lan1";
     var khoi = document.getElementById("kcd");
+    var trangthai = "lan1";
     nut.onclick = function () {
       // console.log("click on nut");
       if (trangthai == "lan1") {

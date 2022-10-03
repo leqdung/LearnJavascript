@@ -10,15 +10,20 @@
   /* transform: translateX(180px); */
   animation: sangphai 1s forwards;
 }
-/* @-webkit-keyframes sangphai {
+@-webkit-keyframes chieu1 {
   0% {
     transform: translateX(0);
     margin-top: 0px;
     opacity: 1;
   }
+  25% {
+    transform: translateX(250px);
+    margin-top: 15px;
+    opacity: 1;
+  }
   50% {
     transform: translateX(400px);
-    margin-top: 0;
+    margin-top: 100px;
     opacity: 1;
   }
   80% {
@@ -34,35 +39,4 @@
 }
 .chieuso1 {
   animation: chieu1 1s forwards;
-}
-@-webkit-keyframes chieu1 {
-  0% {
-    transform: translateX(200px) translateY(0px);
-  }
-  50% {
-    transform: translateX(200px) translateY(0px);
-  }
-  80% {
-    transform: translateX(200px) translateY(0px);
-  }
-  100% {
-    transporm: translateX(500px);
-  }
-} */
-#kcd {
-  animation: chieu2 2s forwards;
-  @-webkit-keyframes chieu2 {
-    100% {
-      transform: translateX(200px) translateY(0px);
-    }
-    80% {
-      transform: translateX(200px) translateY(0px);
-    }
-    50% {
-      transform: translateX(200px) translateY(0px);
-    }
-    0% {
-      transporm: translateX(500px);
-    }
-  }
 }
