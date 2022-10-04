@@ -16,10 +16,10 @@
   color: white;
   position: relative;
   float: right;
-  float-right: 200px;
+  /* float-right: 200px; */
 }
 .tamgiac {
-  color: white;
+  color: black;
   transition: 0.4s;
   font-size: 15px;
   margin-right: 20px;
@@ -31,4 +31,29 @@
   width: 200px;
   margin-top: 27px;
   visibility: hidden;
+  font-size: 13px;
+}
+ul li .list-group-item {
+  padding: 10px 12px;
+}
+ul li:hover {
+  background-color: blue;
+  color: white;
+}
+.danhsach:after {
+  width: 0;
+  content: "";
+  position: absolute;
+  height: 20px;
+  border: 10px rgba(255, 215, 0, 0) solid;
+  border-bottom-color: white;
+  top: -18px;
+  right: 29px;
+}
+.tamgiactrang {
+  color: white;
+}
+.ra {
+  opacity: 1;
+  visibility: visible;
 }

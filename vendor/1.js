@@ -2,21 +2,15 @@ document.addEventListener(
   "DOMContentLoaded",
   function () {
     //
-    var nut = document.getElementById("nuthieuung");
-    var khoi = document.getElementById("kcd");
-    var trangthai = "lan1";
-    nut.onclick = function () {
-      // console.log("click on nut");
-      if (trangthai == "lan1") {
-        console.log(trangthai);
-        trangthai = "lan2";
-        khoi.classList.add("chieuso1");
-        khoi.classList.remove("ko-dong");
-      } else if (trangthai == "lan2") {
-        console.log(trangthai);
-        trangthai = "lan1";
-        khoi.classList.remove("chieuso1");
-      }
+    var tamgiac = document.getElementsByClassName("tamgiac");
+    var tamgiac = tamgiac[0];
+    var danhsach = document.getElementsByClassName("danhsach");
+    var danhsach = danhsach[0];
+    // xu ly su kien dung onclick va toggle class cho tam giac doi mau
+    tamgiac.onclick = function () {
+      // this.style.color = "white"; // tác dụng và thuộc tính style.color
+      this.classList.toggle("tamgiactrang");
+      danhsach.classList.toggle("ra");
     };
   },
   false
